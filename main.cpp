@@ -21,8 +21,8 @@
 #define color_yellow    14
 #define color_white     15
 
-DWORD diamondBaseAdress = 0x00FD36E0;
-std::vector<DWORD> diamondOffsets{ 0x1c, 0x3C4, 0x9c, 0x1c, 0x148, 0x34, 0xAC };
+DWORD diamondBaseAdress = 0x01037CE8;
+std::vector<DWORD> diamondOffsets{ 0x48, 0x8, 0x318, 0x8, 0x28, 0x14, 0x4FC };
 
 
 std::vector<DWORD> moneyOffsets{};
@@ -59,7 +59,7 @@ int main()
 {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, color_red);
-    std::cout << "CrushCrush cheat made by Mepon\n\n";
+    std::cout << "CrushCrush cheat made by Mepon\n\n\n";
     SetConsoleTextAttribute(hConsole, color_white);
     HWND hGameWindow = FindWindow(NULL, L"Crush Crush");
 
@@ -93,7 +93,9 @@ int main()
     if (num == 1)
     {
         system("CLS");
+        SetConsoleTextAttribute(hConsole, color_green);
         std::cout << "Diamond hack\n\n";
+        SetConsoleTextAttribute(hConsole, color_white);
         ReadProcessMemory(processHandle, (LPVOID)(gameBaseAddress + diamondBaseAdress), &baseAddress, sizeof(baseAddress), NULL);
         DWORD diamondAddress = baseAddress;
         for (int i = 0; i < diamondOffsets.size() - 1; i++)
@@ -105,25 +107,31 @@ int main()
         std::cin >> newValue;
         WriteProcessMemory(processHandle, (LPVOID)(diamondAddress), &newValue,4,0);
         system("CLS");
+        SetConsoleTextAttribute(hConsole, color_green);
         std::cout << "Diamond hack\n\n";
+        SetConsoleTextAttribute(hConsole, color_white);
         std::cout << "Diamonds changed to " << newValue << ". Buy something to have the diamonds";
         Sleep(8000);
+        return 0;
     }
 
     if (num == 2)
     {
         std::cout << "Im working on it.";
-        system("CLS");
+        Sleep(8000);
+        return 0;
     }
 
     if (num == 3)
     {
         std::cout << "Im working on it.";
-        system("CLS");
+        Sleep(8000);
+        return 0;
     }
 
     else
     {
         MessageBoxA(NULL, "Invalid key", "Error", NULL);
+        return 0;
     }
 }
