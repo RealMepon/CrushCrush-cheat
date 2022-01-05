@@ -1,5 +1,4 @@
 # CrushCrush-cheat
-a simple crush crush cheat
 
 ![alt text](https://i.ibb.co/3mt3vPT/WM-Screenshots-20220105201445.png)
 
