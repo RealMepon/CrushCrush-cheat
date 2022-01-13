@@ -1,6 +1,6 @@
 # CrushCrush-cheat
 
-![alt text](https://i.ibb.co/3mt3vPT/WM-Screenshots-20220105201445.png)
+![alt text](https://i.ibb.co/DGFF2rL/WM-Screenshots-20220113210043.png)
 
 How to use?
 1. Downlaod CrushCrushCheat.exe (free-version) or CrushCrush.cpp
