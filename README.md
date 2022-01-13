@@ -10,9 +10,8 @@ How to use?
 
 Features of the paid version:
 
-early updates
-nsfw-unlocker
-more tips
-personal support
+1. early updates
+2. nsfw-unlocker
+3. personal bug fixing
 
 Disclaimer: This program is for education only i am not responsible for any damage.
