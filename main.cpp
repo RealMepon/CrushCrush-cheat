@@ -85,7 +85,7 @@ int main()
     SetConsoleTextAttribute(hConsole, color_yellow);
     std::cout << "Features:\n\n";
     SetConsoleTextAttribute(hConsole, color_blue);
-    std::cout << "Diamond hack[1]\nMoney hack (im working on it)\nNSWF unlocker (im working on it)";
+    std::cout << "Diamond hack[1]\nMoney hack[2]\nNSFW unlocker[3]";
     SetConsoleTextAttribute(hConsole, color_white);
     std::cout << "\n\nEnter number: ";
     std::cin >> num;
@@ -117,14 +117,14 @@ int main()
 
     if (num == 2)
     {
-        std::cout << "Im working on it.";
+        std::cout << "Buy the paid version. Dm me on Discord(Mepon#0127).";
         Sleep(8000);
         return 0;
     }
 
     if (num == 3)
     {
-        std::cout << "Im working on it.";
+        std::cout << "Buy the paid version. Dm me on Discord(Mepon#0127).";
         Sleep(8000);
         return 0;
     }
